@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TutorialsNinja Automation Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.SeleniumProj.qa.listeners.MyListeners"/>
+  </listeners>
+  <test thread-count="5" name="TutorialsNinja Test Cases(failed)">
+    <classes>
+      <class name="com.SeleniumProj.qa.testcases.Registration">
+        <methods>
+          <include name="verifyRegisteringAccountWithAllFields"/>
+          <include name="verifyRegistreringAccountWithMandatoryFields"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifyRegisteringAccountWithoutFillingAnyDetails"/>
+        </methods>
+      </class> <!-- com.SeleniumProj.qa.testcases.Registration -->
+      <class name="com.SeleniumProj.qa.testcases.Search">
+        <methods>
+          <include name="setUp"/>
+          <include name="verifySearchWithValidProduct"/>
+          <include name="verifySearchWithInvalidProduct"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.SeleniumProj.qa.testcases.Search -->
+      <class name="com.SeleniumProj.qa.testcases.Login">
+        <methods>
+          <include name="verifyLoginWithInvalidCredentials"/>
+          <include name="tearDown"/>
+          <include name="verifyLoginWithValidCredentials"/>
+          <include name="verifyLoginWithBlankCredentials"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.SeleniumProj.qa.testcases.Login -->
+    </classes>
+  </test> <!-- TutorialsNinja Test Cases(failed) -->
+</suite> <!-- Failed suite [TutorialsNinja Automation Suite] -->
